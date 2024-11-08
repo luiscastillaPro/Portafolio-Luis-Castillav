@@ -1,0 +1,177 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .7rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: white;
+    border-bottom: 1px solid rgb(105, 105, 105);
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-10%) scale(0.9); opacity: 0; }
+    100% { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+.navbar-scrolled {
+    background: linear-gradient(to right, #ff7e29, #ff2600);
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+}
+
+.logo-white {
+    color: white;
+}
+
+.logo-orange {
+    background: linear-gradient(to right, #ff7e29, #ff2600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-black {
+    color: black;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    font-size: 15px;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 0.3rem solid transparent;
+    cursor: pointer;
+}
+
+.navbar-links a:hover {
+    color: #ff6600;
+    border-bottom: 0.3rem solid #ff6600;
+}
+
+.navbar-links a.active {
+    color: black;
+    border-bottom: 0.3rem solid black;
+}
+
+.navbar-scrolled .navbar-links a:hover {
+    color: black;
+    border-bottom: .3rem solid #000000;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        gap: 0;
+        z-index: 9999;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .navbar-links a {
+        font-size: 18px;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        border: none;
+        position: relative;
+    }
+
+    .navbar-links a:hover {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+    }
+
+     .navbar-links a.active {
+        background-color: #ff6600;
+        color: black;
+        border: none;
+    }
+
+    .navbar-scrolled .navbar-links a:hover {
+        color: black;
+        border: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.8rem;
+    }
+
+    .navbar-toggle {
+        font-size: 1.2rem;
+    }
+
+    .navbar-links a {
+        font-size: 16px;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .navbar {
+        padding: 0.6rem;
+    }
+
+    .navbar-toggle {
+        font-size: 1rem;
+    }
+
+    .navbar-links a {
+        font-size: 14px;
+        padding: 0.6rem;
+    }
+}

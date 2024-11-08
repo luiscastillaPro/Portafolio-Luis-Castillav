@@ -1,0 +1,207 @@
+.educacion-container {
+    padding: 20px;
+    margin: 10rem auto 4rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    border: 1px solid rgb(105, 105, 105);
+}
+
+.col {
+    flex: 1;
+}
+
+.titulo-educacion,
+.titulo-experiencia {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: "DM Serif Display", serif;
+    color: white;
+    position: relative;
+}
+
+.titulo-educacion::after,
+.titulo-experiencia::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 0.4rem;
+    background-color: #ff6600;
+    margin: 10px auto 0;
+}
+
+.icono-educacion,
+.icono-experiencia {
+    color: #ff6600;
+    margin-right: 10px;
+}
+
+.educacion-item,
+.experiencia-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.educacion-info h3,
+.experiencia-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.educacion-info span,
+.experiencia-info span {
+    display: block;
+    font-size: 1rem;
+    color: #b3b3b3;
+    font-weight: 600;
+}
+
+.educacion-info p,
+.experiencia-info p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #b3b3b3;
+    font-weight: 600;
+}
+
+.experiencia-info,
+.educacion-info {
+    margin-left: 1rem;
+}
+
+._circleContainer_1u4ch_75 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0.8em 5px 0.5em;
+}
+
+._circle_1u4ch_75 {
+    width: 30px;
+    height: 30px;
+    border: 4px solid #000000;
+    border-radius: 50%;
+    background-color: #ff6600;
+    position: absolute;
+    bottom: 90px;
+}
+
+._line_1u4ch_105 {
+    width: 8px;
+    height: 60%;
+    background-color: #000000;
+    position: absolute;
+    top: 36px;
+    z-index: 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.educacion-item.slide-in-left {
+    animation: slideInLeft 2s forwards;
+}
+
+.experiencia-item.slide-in-right {
+    animation: slideInRight 2s forwards;
+}
+
+.educacion-item,
+.experiencia-item {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.educacion-item.visible,
+.experiencia-item.visible {
+    opacity: 1;
+    transition: opacity 2s ease; 
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+.educacion-item.slide-out-left {
+    animation: slideOutLeft 2s forwards;
+}
+
+.experiencia-item.slide-out-right {
+    animation: slideOutRight 2s forwards;
+}
+
+@media (max-width: 768px) {
+    .educacion-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .col {
+        flex: 1 100%;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+
+    .titulo-educacion,
+    .titulo-experiencia {
+        font-size: 2.5rem;
+    }
+
+    .educacion-info h3,
+    .experiencia-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .educacion-info p,
+    .experiencia-info p,
+    .educacion-info span,
+    .experiencia-info span {
+        font-size: 0.9rem;
+    }
+}

@@ -1,12 +1,29 @@
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    background-color: rgb(0, 0, 0); 
+    object-fit: cover;
+    overflow: hidden;
+}
 
-/* 
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0); 
+    border-left: 1px solid rgb(105, 105, 105); 
+}
 
-*/
+::-webkit-scrollbar-thumb {
+    background-color: #fa5c00;
+}
+
+html, body {
+    overflow-x: hidden;
+}

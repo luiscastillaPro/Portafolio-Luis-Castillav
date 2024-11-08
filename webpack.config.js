@@ -39,10 +39,11 @@ module.exports = {
               loader: "css-loader" // translates CSS into CommonJS
           }]
         }, //css only files
-        { 
-          test: /\.(png|svg|jpg|gif)$/, use: {
+        {
+          test: /\.(png|jpe?g|svg|jpg|gif)$/i, // Incluye .jpeg y .jpg
+          use: {
             loader: 'file-loader',
-            options: { name: '[name].[ext]' } 
+            options: { name: '[name].[ext]', outputPath: 'images' } // Define una carpeta de salida opcional
           }
         }, //for images
         { test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/, use: ['file-loader'] } //for fonts
@@ -71,7 +72,7 @@ module.exports = {
     // }),
     new HtmlWebpackPlugin({
         favicon: '4geeks.ico',
-        template: 'template.html'
+        template: 'index.html'
     }),
   ]
 };

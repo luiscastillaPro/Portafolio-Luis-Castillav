@@ -1,0 +1,238 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s;
+    backdrop-filter: blur(5px); 
+}
+
+.modal-content {
+    background: rgb(97, 97, 97);
+    padding: 0px 20px 20px 20px;
+    border-radius: 20px;
+    width: 60vw;
+    max-width: 90vw;
+    max-height: 90vh;
+    box-sizing: border-box;
+    animation: grow 0.5s forwards;
+    overflow: auto;
+    z-index: 10000;
+    color: #e6e6e6;
+}
+
+.modal-title {
+    margin: 0 auto;
+    font-family: "DM Serif Display", serif;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+    color: #ff6600;
+    padding-left: 5rem;
+}
+
+.modalito{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.modal-proyect-caracteristi {
+    flex: 3;
+    padding: 0 2rem 0 1rem;
+}
+
+.modal-proyect-details {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    flex: 1;
+    background-color: rgb(10, 10, 10);
+    border-radius: 20px;
+    border: 1px solid rgb(202, 202, 202);
+    color: white;
+}
+
+.modal-proyect-details h5{
+    color: #ff6600;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.modal-proyect-details p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.close-button {
+    background: linear-gradient(to right, #ff7e29, #ff2600);
+    border-radius: 30px;
+    padding: 8px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: black;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 126, 41, 2);
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 15px;
+    border: 25px solid rgb(0, 0, 0);
+}
+
+.modal-description, .project-details {
+    margin-top: 20px;
+}
+
+.info-button {
+    background: none;
+    color: #ff6600;
+    border: none;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.info-button:hover {
+    transform: scale(1.12);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.modal-propi1{
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.modal-til{
+    margin-bottom: 2rem;
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    text-align: center;
+    color: #ff6600;
+}
+
+.modal-proyect-caracteristi h2 {
+    font-weight: bold;
+    font-family: "DM Serif Display", serif;
+    color: #ff6600;
+}
+
+.modal-separador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 760px) {
+
+    .modal-overlay {
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 90vw;
+        padding: 10px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .modal-title {
+        font-size: 2.5rem;
+        padding-left: 0;
+    }
+
+    .modalito {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-proyect-caracteristi, .modal-proyect-details {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .modal-image {
+        border: 5px solid rgb(0, 0, 0);
+    }
+
+    .close-button {
+        font-size: 0.9rem;
+        padding: 6px 16px;
+    }
+
+    .info-button {
+        font-size: 1.5rem;
+    }
+
+    .skills-list li {
+        font-size: 0.9rem;
+    }
+
+    .modal-separador {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .modal-proyect-caracteristi h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .modal-proyect-details h5 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .modal-proyect-details p {
+        font-size: 0.9rem;
+    }
+}
