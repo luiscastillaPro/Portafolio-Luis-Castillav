@@ -15,6 +15,11 @@ import imagen4 from "../../img/todolist/imagen4.jpeg";
 import portada2 from "../../img/contactlist/portada2.jpeg";
 import contact1 from "../../img/contactlist/contact1.jpeg";
 import contact2 from "../../img/contactlist/contact2.jpeg";
+import tetrisini from "../../img/Tetris/tetrisini.jpg";
+import tetrisconte from "../../img/Tetris/tetrisconte.jpg";
+import tetrisnivel from "../../img/Tetris/tetrisnivel.jpg";
+import tetrisover from "../../img/Tetris/tetrisover.jpg";
+import tetrispuntos from "../../img/Tetris/tetrispuntos.jpg";
 import construccion from "../../img/construccion.jpeg";
 import "../../styles/proyectos.css";
 
@@ -29,6 +34,17 @@ const proyectosData = [
     funcionalidad: ["Exploración de Libros: Todos los usuarios pueden navegar y buscar libros en una biblioteca visualmente atractiva.", "Interacción Social: Los usuarios registrados pueden añadir libros a favoritos, comentar, y compartir reseñas.", "Personalización: Opción de cambiar entre modo claro y oscuro.", "Gestión de Perfil: Los usuarios pueden personalizar su avatar, nombre de usuario y configuración de privacidad.", "Calificación y Opinión del Usuario: Sistema de calificación visible para todos los visitantes, que recopila y muestra una media basada en los votos de los usuarios."],
     tecnologias: ["Google Books API: Permite acceder a una biblioteca extensa de libros, con detalles como descripción, imágenes y autores.", "Commento: Gestiona el sistema de comentarios para fomentar la interacción de los usuarios.", "CHATRA: Integración de un chat en vivo para mejorar la experiencia de usuario.", "Base de Datos de Usuarios: Almacena credenciales, preferencias de usuario, y tokens de autenticación.", "Base de Datos de Libros de Respaldo: Incluye información relevante de los libros para garantizar disponibilidad aún sin conexión a Google Books.", "Base de Datos de Calificaciones: Recopila y promedia calificaciones de usuarios, proporcionando feedback valioso."],
     tipo: "Aplicacion Web"
+  },
+  {
+    titulo: "Juego Tetris",
+    imagenes: [tetrisnivel, tetrisover, tetrisini, tetrisconte, tetrispuntos],
+    liveLink: "https://tetris-luis-castilla.vercel.app/",
+    codigoLink: "https://github.com/luiscastillaPro/Tetris-Luis-Castilla",
+    skills: ["React", "JavaScript", "HTML", "CSS"],
+    proposito: "El propósito de este juego es recrear la clásica experiencia de Tetris, desafiando a los jugadores a encajar piezas de diferentes formas en un espacio limitado. El juego busca ofrecer entretenimiento mientras pone a prueba las habilidades cognitivas y de resolución de problemas de los usuarios, mejorando su rapidez y capacidad de tomar decisiones bajo presión.",
+    funcionalidad: ["Juego de Tetris: El jugador debe mover y rotar las piezas de diferentes formas para que encajen en el espacio disponible.","Cuenta Regresiva: Antes de que inicie el juego, hay una cuenta regresiva que añade emoción al comenzar.","Puntajes y Niveles: El juego aumenta en dificultad conforme se eliminan filas, aumentando la velocidad de las piezas y acumulando puntos.","Sonidos y Música: Incluye efectos de sonido para el inicio del juego, las eliminaciones de filas, y un sonido para cuando el jugador pierde.","Sistema de Game Over: El juego termina cuando las piezas llegan a la parte superior de la pantalla, y permite reiniciar desde el final.",],
+    tecnologias: ["React: Biblioteca de JavaScript para construir una interfaz interactiva y administrar el estado del juego.","HTML y CSS: Usados para estructurar y diseñar la interfaz visual del juego.","JavaScript: Lenguaje de programación principal para la lógica del juego, incluyendo la gestión del tablero, las piezas y los puntajes.","Hooks de React (useState, useEffect): Para manejar el estado del juego y los efectos, como la cuenta regresiva y la actualización del puntaje.","Audio: Reproductores de audio para efectos de sonido y música de fondo.",],
+    tipo: "Juego Web"
   },
   {
     titulo: "Todo List",
@@ -54,13 +70,13 @@ const proyectosData = [
   },
   {
     titulo: "Gosh",
-    imagenes: [construccion], 
-    liveLink: "", 
+    imagenes: [construccion],
+    liveLink: "",
     codigoLink: "",
     skills: ["React", "Bootstrap", "API REST", "JavaScript", "HTML", "CSS"],
     proposito: "Gosh es una aplicación en desarrollo que tiene como objetivo ofrecer una experiencia innovadora.",
-    funcionalidad: ["Esta sección estará disponible cuando el proyecto esté más avanzado.","En su versión final, Gosh ofrecerá una experiencia personalizada para los usuarios."],
-    tecnologias: ["React: Para la creación de componentes interactivos y dinámicos en la interfaz de usuario.","Bootstrap: Proporciona una base sólida para el diseño responsivo y moderno.","API REST: Facilitará la comunicación entre el frontend y los datos almacenados en el backend.","JavaScript, HTML y CSS: Tecnologías base para la estructura y estilo de la aplicación."],
+    funcionalidad: ["Esta sección estará disponible cuando el proyecto esté más avanzado.", "En su versión final, Gosh ofrecerá una experiencia personalizada para los usuarios."],
+    tecnologias: ["React: Para la creación de componentes interactivos y dinámicos en la interfaz de usuario.", "Bootstrap: Proporciona una base sólida para el diseño responsivo y moderno.", "API REST: Facilitará la comunicación entre el frontend y los datos almacenados en el backend.", "JavaScript, HTML y CSS: Tecnologías base para la estructura y estilo de la aplicación."],
     tipo: "Proyecto en desarrollo - funcionalidad y enlaces disponibles próximamente."
   },
 ];

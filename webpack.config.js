@@ -71,7 +71,7 @@ module.exports = {
     //   files: path.resolve(__dirname, "src"),
     // }),
     new HtmlWebpackPlugin({
-        favicon: '4geeks.ico',
+        favicon: 'porti.ico',
         template: 'index.html'
     }),
   ]
