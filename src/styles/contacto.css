@@ -52,10 +52,25 @@
     margin-top: 6rem;
 }
 
-.contacto-mensajee{
+.contacto-mensajee {
     margin-top: 2.5rem;
     color: #ff6600;
-    font-size: 1.9rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    animation: zoomEffect 2s ease-in-out infinite;
+}
+
+/* Animación de zoom */
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta el tamaño al 120% */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño original */
+    }
 }
 
 .contact-detail {

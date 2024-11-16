@@ -55,28 +55,64 @@
     text-decoration: none;
     font-weight: bold;
     color: white;
-    transition: color 0.2s ease, border-bottom 0.2s ease;
+    transition: color 0.2s ease; /* Transición suave del color */
     font-size: 15px;
-    position: relative;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
     box-sizing: border-box;
-    border-bottom: 0.3rem solid transparent;
+    padding-bottom: 3px; /* Espaciado entre el texto y el borde */
     cursor: pointer;
 }
 
-.navbar-links a:hover {
-    color: #ff6600;
-    border-bottom: 0.3rem solid #ff6600;
+/* Si el bloque `a:not([href]):not([class])` no puede eliminarse */
+a:not([href]):not([class]) {
+    color: white; /* Sobrescribe el color heredado */
+    text-decoration: none;
 }
 
+a:not([href]):not([class]):hover {
+    color: #ff6600; /* Aplica el color naranja al hover */
+}
+
+/* Pseudo-elemento para el borde animado */
+.navbar-links a::after {
+    content: ''; /* Sin contenido visible */
+    position: absolute;
+    bottom: 0; /* Colocado al fondo del enlace */
+    left: 0; /* Inicia desde la izquierda */
+    width: 0%; /* Comienza vacío */
+    height: 3px; /* Altura del borde */
+    background-color: #ff6600; /* Color del borde por defecto (naranja) */
+    transition: width 0.6s ease, background-color 0.3s ease; /* Efecto suave */
+    z-index: -1; /* Para no interferir con el texto */
+}
+
+/* Hover: el borde se llena de izquierda a derecha */
+.navbar-links a:hover::after {
+    width: 100%; /* Se expande completamente */
+}
+
+/* Estilo para enlaces activos */
 .navbar-links a.active {
     color: black;
-    border-bottom: 0.3rem solid black;
 }
 
-.navbar-scrolled .navbar-links a:hover {
-    color: black;
-    border-bottom: .3rem solid #000000;
+/* Borde completo para enlaces activos */
+.navbar-links a.active::after {
+    background-color: black;
+    width: 100%;
 }
+
+/* Hover en modo navbar-scrolled */
+.navbar-scrolled .navbar-links a:hover::after {
+    background-color: black; /* Cambia el color del borde a negro */
+    color: black;
+    width: 100%; /* Mismo efecto de llenado */
+}
+
+.navbar-scrolled .navbar-links a:hover{
+    color: black;
+}
+
 
 @media (max-width: 768px) {
 

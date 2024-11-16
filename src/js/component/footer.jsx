@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPalette, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPalette, faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const socialLinks = [
@@ -23,7 +23,8 @@ const Footer = () => {
                 ))}
             </div>
             <p className="footer-text">
-                <FontAwesomeIcon icon={faPalette} /> Diseñado y construido por Luis Castilla
+                <FontAwesomeIcon icon={faPalette} /> Diseñado y construido por Luis Castilla con el 
+                <FontAwesomeIcon icon={faHeart}  className="corazonsito" />
             </p>
             <p className="footer-year">¡Gracias por visitar! 
                  &copy; {new Date().getFullYear()}

@@ -45,3 +45,20 @@
     color: #ff6600;
     font-weight: bold;
 }
+
+.corazonsito{
+    color: red;
+    animation: zoomcora 2s ease-in-out infinite;
+}
+
+@keyframes zoomcora {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.4); /* Aumenta el tamaño al 120% */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño original */
+    }
+}
