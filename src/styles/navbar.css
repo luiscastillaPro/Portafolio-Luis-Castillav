@@ -116,6 +116,10 @@ a:not([href]):not([class]):hover {
 
 @media (max-width: 768px) {
 
+    .navbar-links a::after {
+        display: none;
+    }
+
     .navbar {
         justify-content: space-between;
         width: 100vw;
@@ -159,7 +163,7 @@ a:not([href]):not([class]):hover {
 
     .navbar-links a:hover {
         background-color: #ff6600;
-        color: white;
+        color: rgb(0, 0, 0) !important;
         border: none;
     }
 
