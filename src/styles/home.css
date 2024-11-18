@@ -38,7 +38,7 @@
     line-height: 45px;
 }
 
-.home-texto{
+.home-texto {
     font-size: 2rem;
 }
 
@@ -61,21 +61,71 @@
     display: inline;
 }
 
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
+
 @keyframes pulse {
     0% {
-        transform: scale(1.2); /* Tamaño inicial */
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
     }
-    50% {
-        transform: scale(1.6); /* Aumento rápido de tamaño */
+
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
     }
+
     100% {
-        transform: scale(1.2); /* Regresa al tamaño original */
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
+
+@-webkit-keyframes pulse2 {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
     }
 }
 
 .home-bienvenido {
     color: rgb(0, 0, 0);
-    padding: 8px 12px;
+    padding: 8px 12px 8px 25px;
     background: linear-gradient(to right, #ff7e29, #ff2600);
     font-size: 0.8rem;
     width: 11.8rem;
@@ -84,20 +134,51 @@
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
-    border-radius: 30px; 
+    border-radius: 30px;
     font-weight: 500;
-    position: relative; 
+    position: relative;
+    animation: pulse 1.8s linear infinite both;
 }
 
-.home-bienvenido::before {
+.home-bienvenido::after {
     content: '';
-    width: 10px;
-    height: 10px;
-    background-color: #3fce1c;
-    border: 0.5px solid #000000;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px 8px 19px;
+    background: linear-gradient(to right, #ff7e29, #ff2600);
+    font-size: 0.8rem;
+    width: 11.8rem;
+    opacity: 1;
+    z-index: -1;
     border-radius: 50%;
-    transform: translateY(-50%);
-    animation: pulse 1.3s infinite ease-in-out;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 30px;
+    animation: pulse2 2.3s linear 0.5s infinite both;
+}
+
+/* Punto más grande detrás */
+.home-bienvenido span {
+    content: '';
+    position: absolute;
+    /* Relativo al contenedor */
+    width: 11px;
+    /* Tamaño más grande */
+    height: 11px;
+    background-color: #3fce1c;
+    border-radius: 50%;
+    opacity: 1;
+    /* Animación de pulsación */
+    top: 50%;
+    /* Centrado verticalmente */
+    left: 12px;
+    /* Ajusta la posición según el diseño */
+    transform: translate(-20%, -50%);
 }
 
 .home-con1 {
@@ -233,13 +314,16 @@
     transform: translateY(0);
 }
 
-.scroll-indicator, .scroll-indicator-educacion, .scroll-indicator-skills, .scroll-indicator-proyectos {
+.scroll-indicator,
+.scroll-indicator-educacion,
+.scroll-indicator-skills,
+.scroll-indicator-proyectos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.scroll-indicator{
+.scroll-indicator {
     margin-top: 5rem;
 }
 
@@ -279,7 +363,8 @@
 
 @keyframes bounce {
 
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0);
     }
 
@@ -300,7 +385,7 @@
         margin: 0 auto 1rem;
     }
 
-    .home-texto{
+    .home-texto {
         font-size: 1.6rem;
     }
 
@@ -332,9 +417,10 @@
         text-decoration: none;
     }
 
-    .contact-button .download-icon, .contact-button .user-icon {
+    .contact-button .download-icon,
+    .contact-button .user-icon {
         color: white;
-        opacity: 1; 
+        opacity: 1;
         transform: none;
     }
 
@@ -356,6 +442,3 @@
         justify-content: center;
     }
 }
-
-
-

@@ -67,7 +67,9 @@ const Home = () => {
         <div className="home-container fade-in-element">
             <div className="home-contai fade-in-element">
                 <div className="home-con1 fade-in-element">
-                    <h3 className="home-bienvenido fade-in-element">Disponible para Trabajar</h3>
+                    <h3 className="home-bienvenido fade-in-element">
+                        <span></span>
+                        Disponible para Trabajar</h3>
                     <p className="home-texto fade-in-element">Hola, mi nombre es</p>
                     <h1 className="home-titulo fade-in-element">Luis Castilla</h1>
                     <p className="home-texto fade-in-element">Y soy </p>
