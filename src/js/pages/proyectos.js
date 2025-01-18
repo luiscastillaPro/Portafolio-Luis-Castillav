@@ -21,6 +21,13 @@ import tetrisnivel from "../../img/Tetris/tetrisnivel.jpg";
 import tetrisover from "../../img/Tetris/tetrisover.jpg";
 import tetrispuntos from "../../img/Tetris/tetrispuntos.jpg";
 import construccion from "../../img/construccion.jpeg";
+import cashperfil from "../../img/CashUp/cash-perfil.png";
+import cashregistro from "../../img/CashUp/cash-registro.png";
+import cashprincipal from "../../img/CashUp/cash-principal.png";
+import cashlogin from "../../img/CashUp/cash-login.png";
+import cashgastos from "../../img/CashUp/cash-gastos.png";
+import cashcategoria from "../../img/CashUp/cash-categoria.png";
+import cashcategoriadesplegable from "../../img/CashUp/cash-categoria-desplegable.png";
 import "../../styles/proyectos.css";
 
 const proyectosData = [
@@ -42,9 +49,38 @@ const proyectosData = [
     codigoLink: "https://github.com/luiscastillaPro/Tetris-Luis-Castilla",
     skills: ["React", "JavaScript", "HTML", "CSS"],
     proposito: "El propósito de este juego es recrear la clásica experiencia de Tetris, desafiando a los jugadores a encajar piezas de diferentes formas en un espacio limitado. El juego busca ofrecer entretenimiento mientras pone a prueba las habilidades cognitivas y de resolución de problemas de los usuarios, mejorando su rapidez y capacidad de tomar decisiones bajo presión. ",
-    funcionalidad: ["Juego de Tetris: El jugador debe mover y rotar las piezas de diferentes formas para que encajen en el espacio disponible.","Cuenta Regresiva: Antes de que inicie el juego, hay una cuenta regresiva que añade emoción al comenzar.","Puntajes y Niveles: El juego aumenta en dificultad conforme se eliminan filas, aumentando la velocidad de las piezas y acumulando puntos.","Sonidos y Música: Incluye efectos de sonido para el inicio del juego, las eliminaciones de filas, y un sonido para cuando el jugador pierde.","Sistema de Game Over: El juego termina cuando las piezas llegan a la parte superior de la pantalla, y permite reiniciar desde el final.",],
-    tecnologias: ["React: Biblioteca de JavaScript para construir una interfaz interactiva y administrar el estado del juego.","HTML y CSS: Usados para estructurar y diseñar la interfaz visual del juego.","JavaScript: Lenguaje de programación principal para la lógica del juego, incluyendo la gestión del tablero, las piezas y los puntajes.","Hooks de React (useState, useEffect): Para manejar el estado del juego y los efectos, como la cuenta regresiva y la actualización del puntaje.","Audio: Reproductores de audio para efectos de sonido y música de fondo.",],
+    funcionalidad: ["Juego de Tetris: El jugador debe mover y rotar las piezas de diferentes formas para que encajen en el espacio disponible.", "Cuenta Regresiva: Antes de que inicie el juego, hay una cuenta regresiva que añade emoción al comenzar.", "Puntajes y Niveles: El juego aumenta en dificultad conforme se eliminan filas, aumentando la velocidad de las piezas y acumulando puntos.", "Sonidos y Música: Incluye efectos de sonido para el inicio del juego, las eliminaciones de filas, y un sonido para cuando el jugador pierde.", "Sistema de Game Over: El juego termina cuando las piezas llegan a la parte superior de la pantalla, y permite reiniciar desde el final.",],
+    tecnologias: ["React: Biblioteca de JavaScript para construir una interfaz interactiva y administrar el estado del juego.", "HTML y CSS: Usados para estructurar y diseñar la interfaz visual del juego.", "JavaScript: Lenguaje de programación principal para la lógica del juego, incluyendo la gestión del tablero, las piezas y los puntajes.", "Hooks de React (useState, useEffect): Para manejar el estado del juego y los efectos, como la cuenta regresiva y la actualización del puntaje.", "Audio: Reproductores de audio para efectos de sonido y música de fondo.",],
     tipo: "Juego Web"
+  },
+  {
+    titulo: "CashUp",
+    imagenes: [cashlogin, cashprincipal, cashcategoria, cashgastos, cashregistro, cashperfil, cashcategoriadesplegable],
+    liveLink: "https://cash-up-eight.vercel.app/login",
+    codigoLink: "https://github.com/luiscastillaPro/CashUp",
+    skills: ["API REST", "React", "JavaScript", "Firebase", "CSS", "Node.js"],
+    proposito: "El propósito de CashUp es brindar una herramienta intuitiva y práctica para gestionar las finanzas personales de manera eficiente. Permite a los usuarios registrar ingresos, gastos y categorizarlos, proporcionando una visión clara de su salud financiera. Esta aplicación está diseñada para ayudar a las personas a mejorar su administración del dinero, identificar patrones de gasto y tomar decisiones informadas para lograr sus objetivos financieros.",
+    funcionalidad: [
+      "Inicio de Sesión y Registro: Los usuarios pueden crear una cuenta o iniciar sesión para acceder a sus datos financieros personales.",
+      "Gestión de Categorías: Permite a los usuarios crear, editar y eliminar categorías de gastos para una mejor organización.",
+      "Registro de Transacciones: Los usuarios pueden registrar ingresos y gastos, especificando la categoría y el monto.",
+      "Visualización de Gastos por Categoría: Una vista detallada que muestra los gastos organizados por categorías, ayudando a identificar áreas de alto gasto.",
+      "Resumen Financiero: Muestra un balance general de ingresos, gastos y saldo restante en tiempo real.",
+      "Interfaz Responsive: La aplicación está optimizada para dispositivos móviles, tabletas y computadoras.",
+      "Sistema Seguro: Los datos de usuario están protegidos utilizando autenticación Firebase.",
+      "Alertas y Límites: Notificaciones visuales para alertar al usuario cuando se acerque a un límite de gasto establecido."
+    ],
+    tecnologias: [
+      "React: Utilizado para construir la interfaz de usuario dinámica y manejar el estado de la aplicación.",
+      "JavaScript: Lenguaje de programación principal para la lógica de la aplicación y la interacción con el backend.",
+      "Firebase Authentication: Proporciona un sistema de inicio de sesión seguro para los usuarios.",
+      "Firebase Firestore: Base de datos en tiempo real para almacenar y recuperar las transacciones financieras del usuario.",
+      "HTML y CSS: Usados para estructurar y diseñar la aplicación, garantizando una experiencia visual atractiva.",
+      "API REST: Implementada para manejar la lógica de negocio y la interacción con el backend.",
+      "Hooks de React (useState, useEffect, useContext): Para gestionar estados, efectos y contexto de la aplicación.",
+      "Responsiveness: Adaptación de la interfaz a diferentes dispositivos con diseño responsive usando CSS Grid y Flexbox."
+    ],
+    tipo: "Aplicacion Web"
   },
   {
     titulo: "Todo List",
@@ -53,7 +89,7 @@ const proyectosData = [
     codigoLink: "https://github.com/luiscastillaPro/luis-castilla-lista-de-tareas",
     skills: ["React", "Bootstrap", "API REST", "JavaScript", "HTML", "CSS"],
     proposito: "El objetivo de esta aplicación es ayudar a los usuarios a organizar sus tareas diarias de manera eficiente, permitiéndoles agregar, editar y eliminar tareas en una interfaz intuitiva.",
-    funcionalidad: ["Gestión de Tareas: Los usuarios pueden agregar nuevas tareas, marcarlas como completadas o pendientes, y eliminarlas según sea necesario.","Edición de Tareas: Opción para modificar la descripción o detalles de una tarea ya creada.", "Filtrado de Tareas: Posibilidad de filtrar y visualizar tareas completadas, pendientes, o todas las tareas a la vez.", "Interfaz Responsiva: Diseño adaptativo que se ajusta a cualquier dispositivo, ya sea móvil, tablet o computadora.", "Almacenamiento Persistente: Uso de almacenamiento local o base de datos para que las tareas se mantengan disponibles al recargar la página."],
+    funcionalidad: ["Gestión de Tareas: Los usuarios pueden agregar nuevas tareas, marcarlas como completadas o pendientes, y eliminarlas según sea necesario.", "Edición de Tareas: Opción para modificar la descripción o detalles de una tarea ya creada.", "Filtrado de Tareas: Posibilidad de filtrar y visualizar tareas completadas, pendientes, o todas las tareas a la vez.", "Interfaz Responsiva: Diseño adaptativo que se ajusta a cualquier dispositivo, ya sea móvil, tablet o computadora.", "Almacenamiento Persistente: Uso de almacenamiento local o base de datos para que las tareas se mantengan disponibles al recargar la página."],
     tecnologias: ["React: Biblioteca de JavaScript usada para construir una interfaz de usuario interactiva y eficiente.", "Bootstrap: Framework de CSS que facilita el diseño responsivo y estilizado de la aplicación.", "API REST: Conexión a una API para almacenar y recuperar las tareas del usuario de forma remota.", "LocalStorage: Permite que los datos de las tareas persistan incluso al recargar la página, si no hay conexión con la API.", "React Hooks: Utilización de hooks como useState y useEffect para manejar el estado y los ciclos de vida del componente."],
     tipo: "Aplicacion Web"
   },
@@ -73,7 +109,7 @@ const proyectosData = [
     imagenes: [construccion],
     liveLink: "",
     codigoLink: "",
-    skills: ["React", "Bootstrap", "API REST", "JavaScript", "HTML", "CSS"],
+    skills: ["React", "Bootstrap", "API REST", "JavaScript", "MongoDB", "CSS"],
     proposito: "Gosh es una aplicación en desarrollo que tiene como objetivo ofrecer una experiencia innovadora.",
     funcionalidad: ["Esta sección estará disponible cuando el proyecto esté más avanzado.", "En su versión final, Gosh ofrecerá una experiencia personalizada para los usuarios."],
     tecnologias: ["React: Para la creación de componentes interactivos y dinámicos en la interfaz de usuario.", "Bootstrap: Proporciona una base sólida para el diseño responsivo y moderno.", "API REST: Facilitará la comunicación entre el frontend y los datos almacenados en el backend.", "JavaScript, HTML y CSS: Tecnologías base para la estructura y estilo de la aplicación."],

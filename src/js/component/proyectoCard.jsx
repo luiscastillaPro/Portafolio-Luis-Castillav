@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../../styles/proyectoCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faBootstrap, faPython } from '@fortawesome/free-brands-svg-icons'; // Importa íconos de habilidades
-import { faInfoCircle, faExternalLinkAlt, faKey, faDatabase } from '@fortawesome/free-solid-svg-icons'; // Asegúrate de incluir faKey y faDatabase
+import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faBootstrap, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faInfoCircle, faExternalLinkAlt, faKey, faDatabase, faBolt, faStar, faFire, faLeaf } from '@fortawesome/free-solid-svg-icons';
 
 import Modal from "../component/modal.jsx";
 
@@ -27,18 +27,20 @@ const ProyectoCard = ({ proyecto, extraClass }) => {
 
     const { titulo, imagenes = [], liveLink, codigoLink, skills, proposito, funcionalidad, tecnologias, tipo } = proyecto;
 
-    // Mapa de íconos para las habilidades
     const skillIcons = {
         HTML: faHtml5,
         CSS: faCss3Alt,
         JavaScript: faJs,
         React: faReact,
-        "Node.js": faNodeJs, // Agregar ícono para Node.js
+        "Node.js": faNodeJs,
         Bootstrap: faBootstrap,
         Python: faPython,
         SQLAlchemy: faDatabase, // Asegúrate de que este ícono esté importado
-        "API REST": faKey // Asegúrate de que este ícono esté importado
-        // Agrega más habilidades e íconos según sea necesario
+        "API REST": faKey, // Asegúrate de que este ícono esté importado
+        Vite: faBolt, // Usa el icono de un rayo (puedes buscar alternativas si usas otra librería)
+        Astro: faStar, // Un icono de estrella (genérico para Astro)
+        Firebase: faFire, // Representado por un icono de fuego
+        MongoDB: faLeaf // Representado por una hoja
     };
 
     return (
@@ -59,7 +61,7 @@ const ProyectoCard = ({ proyecto, extraClass }) => {
                     >
                         <button className="proyecto-boton1" onClick={anteriorImagen}>{"<"}</button>
                         <img className='proyecto-imagen' src={imagenes[imagenActual]} alt={`${titulo} imagen`} />
-                        
+
                         {/* Contenedor de habilidades con íconos y texto */}
                         <div className={`proyecto-skills-overlay ${hover ? 'show' : ''}`}>
                             {skills && skills.map((skill, index) => {
@@ -96,11 +98,11 @@ const ProyectoCard = ({ proyecto, extraClass }) => {
                             {"</>"} Ver código
                         </a>
                     </div>
-                    <Modal 
-                        visible={modalVisible} 
-                        onClose={() => setModalVisible(false)} 
+                    <Modal
+                        visible={modalVisible}
+                        onClose={() => setModalVisible(false)}
                         title={titulo}
-                        imagenes={imagenes} 
+                        imagenes={imagenes}
                         skills={skills}
                         proposito={proposito}
                         funcionalidad={funcionalidad}
