@@ -28,6 +28,13 @@ import cashlogin from "../../img/CashUp/cash-login.png";
 import cashgastos from "../../img/CashUp/cash-gastos.png";
 import cashcategoria from "../../img/CashUp/cash-categoria.png";
 import cashcategoriadesplegable from "../../img/CashUp/cash-categoria-desplegable.png";
+import inversores1 from "../../img/Inversores/inversores1.png";
+import inversores2 from "../../img/Inversores/inversores2.png";
+import inversores3 from "../../img/Inversores/inversores3.png";
+import inversores4 from "../../img/Inversores/inversores4.png";
+import inversores5 from "../../img/Inversores/inversores5.png";
+import inversores6 from "../../img/Inversores/inversores6.png";
+import inversores7 from "../../img/Inversores/inversores7.png";
 import "../../styles/proyectos.css";
 
 const proyectosData = [
@@ -81,6 +88,36 @@ const proyectosData = [
       "Responsiveness: Adaptación de la interfaz a diferentes dispositivos con diseño responsive usando CSS Grid y Flexbox."
     ],
     tipo: "Aplicacion Web"
+  },
+  {
+    titulo: "Inversores",
+    imagenes: [inversores1, inversores2, inversores3, inversores4, inversores5, inversores6, inversores7],
+    liveLink: "https://inversores-inmobiliario.vercel.app/",
+    codigoLink: "https://github.com/luiscastillaPro/Inversores-inmobiliario",
+    skills: ["React", "Bootstrap", "Firebase", "JavaScript", "Astro", "Vite"],
+    proposito: "El propósito de la landing page Inversores es captar la atención de posibles clientes interesados en inversiones inmobiliarias, presentando información clara, atractiva y organizada sobre los beneficios y oportunidades del mercado. Diseñada para crear confianza, esta página busca generar leads a través de un formulario de contacto y destacar la experiencia y profesionalismo de la empresa.",
+    funcionalidad: [
+      "Sección de Presentación: Una introducción visualmente atractiva con imágenes y un eslogan que resalta el enfoque principal del negocio.",
+      "Sección de Servicios: Explica los principales servicios y beneficios que ofrece la empresa a los inversores.",
+      "Formulario de Contacto: Permite a los usuarios interesados dejar sus datos para ser contactados por la empresa.",
+      "Sección de Testimonios: Incluye comentarios de clientes satisfechos que refuerzan la credibilidad del negocio.",
+      "Diseño Responsive: La página está optimizada para ser visualizada correctamente en dispositivos móviles, tabletas y computadoras.",
+      "Optimización para SEO: La estructura y el contenido de la página están diseñados para mejorar su posicionamiento en motores de búsqueda.",
+      "Animaciones Sutiles: Efectos visuales para mejorar la experiencia del usuario sin distraer del contenido principal."
+    ]
+    ,
+    tecnologias: [
+      "React: Utilizado para crear los componentes de la interfaz de usuario de manera dinámica y eficiente.",
+      "Bootstrap: Framework utilizado para el diseño responsive y los estilos predefinidos.",
+      "Firebase: Usado para gestionar la base de datos del formulario de contacto y posibles integraciones futuras.",
+      "JavaScript: Lenguaje principal para la lógica de la aplicación y la interacción dinámica con los componentes.",
+      "Astro: Framework para construir sitios estáticos rápidos y optimizados.",
+      "Vite: Herramienta de desarrollo utilizada para la configuración y el despliegue rápido del proyecto.",
+      "HTML y CSS: Usados para estructurar y estilizar el contenido, garantizando una experiencia visual profesional.",
+      "SEO Básico: Implementación de etiquetas y metadatos clave para mejorar el posicionamiento en buscadores."
+    ]
+    ,
+    tipo: "Landing Page"
   },
   {
     titulo: "Todo List",
