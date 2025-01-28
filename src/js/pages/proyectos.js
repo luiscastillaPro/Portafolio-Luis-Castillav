@@ -67,26 +67,8 @@ const proyectosData = [
     codigoLink: "https://github.com/luiscastillaPro/CashUp",
     skills: ["API REST", "React", "JavaScript", "Firebase", "CSS", "Node.js"],
     proposito: "El propósito de CashUp es brindar una herramienta intuitiva y práctica para gestionar las finanzas personales de manera eficiente. Permite a los usuarios registrar ingresos, gastos y categorizarlos, proporcionando una visión clara de su salud financiera. Esta aplicación está diseñada para ayudar a las personas a mejorar su administración del dinero, identificar patrones de gasto y tomar decisiones informadas para lograr sus objetivos financieros.",
-    funcionalidad: [
-      "Inicio de Sesión y Registro: Los usuarios pueden crear una cuenta o iniciar sesión para acceder a sus datos financieros personales.",
-      "Gestión de Categorías: Permite a los usuarios crear, editar y eliminar categorías de gastos para una mejor organización.",
-      "Registro de Transacciones: Los usuarios pueden registrar ingresos y gastos, especificando la categoría y el monto.",
-      "Visualización de Gastos por Categoría: Una vista detallada que muestra los gastos organizados por categorías, ayudando a identificar áreas de alto gasto.",
-      "Resumen Financiero: Muestra un balance general de ingresos, gastos y saldo restante en tiempo real.",
-      "Interfaz Responsive: La aplicación está optimizada para dispositivos móviles, tabletas y computadoras.",
-      "Sistema Seguro: Los datos de usuario están protegidos utilizando autenticación Firebase.",
-      "Alertas y Límites: Notificaciones visuales para alertar al usuario cuando se acerque a un límite de gasto establecido."
-    ],
-    tecnologias: [
-      "React: Utilizado para construir la interfaz de usuario dinámica y manejar el estado de la aplicación.",
-      "JavaScript: Lenguaje de programación principal para la lógica de la aplicación y la interacción con el backend.",
-      "Firebase Authentication: Proporciona un sistema de inicio de sesión seguro para los usuarios.",
-      "Firebase Firestore: Base de datos en tiempo real para almacenar y recuperar las transacciones financieras del usuario.",
-      "HTML y CSS: Usados para estructurar y diseñar la aplicación, garantizando una experiencia visual atractiva.",
-      "API REST: Implementada para manejar la lógica de negocio y la interacción con el backend.",
-      "Hooks de React (useState, useEffect, useContext): Para gestionar estados, efectos y contexto de la aplicación.",
-      "Responsiveness: Adaptación de la interfaz a diferentes dispositivos con diseño responsive usando CSS Grid y Flexbox."
-    ],
+    funcionalidad: ["Inicio de Sesión y Registro: Los usuarios pueden crear una cuenta o iniciar sesión para acceder a sus datos financieros personales.", "Gestión de Categorías: Permite a los usuarios crear, editar y eliminar categorías de gastos para una mejor organización.", "Registro de Transacciones: Los usuarios pueden registrar ingresos y gastos, especificando la categoría y el monto.", "Visualización de Gastos por Categoría: Una vista detallada que muestra los gastos organizados por categorías, ayudando a identificar áreas de alto gasto.", "Resumen Financiero: Muestra un balance general de ingresos, gastos y saldo restante en tiempo real.", "Interfaz Responsive: La aplicación está optimizada para dispositivos móviles, tabletas y computadoras.", "Sistema Seguro: Los datos de usuario están protegidos utilizando autenticación Firebase.", "Alertas y Límites: Notificaciones visuales para alertar al usuario cuando se acerque a un límite de gasto establecido."],
+    tecnologias: ["React: Utilizado para construir la interfaz de usuario dinámica y manejar el estado de la aplicación.", "JavaScript: Lenguaje de programación principal para la lógica de la aplicación y la interacción con el backend.", "Firebase Authentication: Proporciona un sistema de inicio de sesión seguro para los usuarios.", "Firebase Firestore: Base de datos en tiempo real para almacenar y recuperar las transacciones financieras del usuario.", "HTML y CSS: Usados para estructurar y diseñar la aplicación, garantizando una experiencia visual atractiva.", "API REST: Implementada para manejar la lógica de negocio y la interacción con el backend.", "Hooks de React (useState, useEffect, useContext): Para gestionar estados, efectos y contexto de la aplicación.", "Responsiveness: Adaptación de la interfaz a diferentes dispositivos con diseño responsive usando CSS Grid y Flexbox."],
     tipo: "Aplicacion Web"
   },
   {
