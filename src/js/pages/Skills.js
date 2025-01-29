@@ -64,14 +64,14 @@ const Skills = () => {
                     <div className="skills-table">
                         {skillsData.map((skill, index) => (
                             <div key={index} className="skill-item fade-in">
-                                <img src={skill.src} alt={skill.name} />
+                                <img src={skill.src} alt={skill.name} loading="lazy" />
                                 <span className="skill-text">{skill.name}</span>
                             </div>
                         ))}
                     </div>
                 </div>
                 <div className="skills-right-column">
-                    <img src={response} alt="Responsive Design" className="responsive-image fade-in-image" />
+                    <img src={response} alt="Responsive Design" className="responsive-image fade-in-image" loading="lazy" />
                     <p className="skills-description fade-in-paragraph">
                         Como desarrollador Full Stack, manejo una variedad de tecnologías clave tanto en el frontend como en el backend, incluyendo HTML, CSS, JavaScript, React, Node.js, Python, SQL y Flask. he trabajado con herramientas y frameworks como Bootstrap para el diseño, Git y GitHub para el control de versiones, y SQLAlchemy y JWT para la autenticación y la gestión de bases de datos. Me aseguro de que cada proyecto sea completamente responsivo. puedo llevar un proyecto desde su concepción hasta su implementación final.
                     </p>

@@ -13,7 +13,7 @@ const Modal = ({ visible, onClose, title, imagenes, skills, proposito, funcional
                 <button onClick={onClose} className="close-button" aria-label="Close modal">Volver</button>
                 </div>
                 
-                <img src={imagenes.length > 0 ? imagenes[0] : ""} alt={title} className="modal-image" />
+                <img src={imagenes.length > 0 ? imagenes[0] : ""} alt={title} className="modal-image" loading="lazy" />
                 <div className="modalito">
                     <div className="modal-proyect-caracteristi">
                         <h2>Propósito del sitio web</h2>

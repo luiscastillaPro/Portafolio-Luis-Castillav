@@ -98,7 +98,7 @@ const Home = () => {
                 </div>
                 <div className="home-perfil fade-in-element">
                     <div className="home-con2">
-                        <img className="foto-perfil" src={foto} alt="Luis Castilla" />
+                        <img className="foto-perfil" src={foto} alt="Luis Castilla" loading="lazy" />
                     </div>
                     <div className="home-redes">
                         {socialLinks.map(({ icon, url }, index) => (

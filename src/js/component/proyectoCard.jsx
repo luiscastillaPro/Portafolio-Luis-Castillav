@@ -60,7 +60,7 @@ const ProyectoCard = ({ proyecto, extraClass }) => {
                         onMouseLeave={() => setHover(false)}
                     >
                         <button className="proyecto-boton1" onClick={anteriorImagen}>{"<"}</button>
-                        <img className='proyecto-imagen' src={imagenes[imagenActual]} alt={`${titulo} imagen`} />
+                        <img className='proyecto-imagen' src={imagenes[imagenActual]} alt={`${titulo} imagen`} loading="lazy" />
 
                         {/* Contenedor de habilidades con íconos y texto */}
                         <div className={`proyecto-skills-overlay ${hover ? 'show' : ''}`}>
