@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/home.css";
-import foto from "../../img/foto.png";
+import foto from "../../img/foto.webp";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faAngleDoubleDown, faDownload, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';

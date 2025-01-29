@@ -40,7 +40,7 @@ module.exports = {
           }]
         }, //css only files
         {
-          test: /\.(png|jpe?g|svg|jpg|gif)$/i, // Incluye .jpeg y .jpg
+          test: /\.(png|jpe?g|svg|jpg|gif|webp)$/i, // Incluye .jpeg y .jpg
           use: {
             loader: 'file-loader',
             options: { name: '[name].[ext]', outputPath: 'images' } // Define una carpeta de salida opcional
