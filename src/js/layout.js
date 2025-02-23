@@ -20,5 +20,4 @@ const Layout = () => {
     );
 };
 
-// Exporta `Layout` directamente sin `injectContext`
 export default Layout;
