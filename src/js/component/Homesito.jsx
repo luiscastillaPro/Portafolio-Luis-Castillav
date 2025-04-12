@@ -79,7 +79,7 @@ const Homesito = () => {
                         Comprometido con el aprendizaje continuo, siempre enfocado en mejorar mis habilidades y en mantenerme al día con las últimas tendencias tecnológicas.
                     </h6>
                     <div className="button-group">
-                        <a href="https://drive.google.com/uc?export=download&id=1FJXKzgC5stMr66OCcgYsFG_EoLXDuz9U" download="CV_Luis_Castilla.pdf">
+                        <a href="https://drive.google.com/uc?export=download&id=19o4q4_zmFnG3j0L0Em4OiJA_D7DrXDVN" download="CV_Luis_Castilla.pdf">
                             <button className="contact-button fade-in-element">
                                 Descargar CV
                                 <FontAwesomeIcon icon={faDownload} className="download-icon" />
